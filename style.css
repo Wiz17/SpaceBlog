@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+#myVideo {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+.video {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+  transition: background-color 0.3s;
+  z-index: 99;
+}
+.nav-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+.nav-contents-list {
+  display: none;
+}
+.nav-content-list-1 {
+  padding-left: 35px;
+  padding-top: 35px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  cursor: pointer;
+}
+.logo {
+  padding: 20px;
+  font-size: 30px;
+  color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.nav-contents {
+  margin-right: 20px;
+}
+.header {
+  height: 100vh;
+}
+.header-content {
+  background-color: rgba(30, 30, 30, 0.5);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-content-style {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.explore-button {
+  padding: 20px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  color: white;
+  border: solid 3px white;
+}
+.explore-button:hover {
+  background-color: black;
+  border: solid 3px black;
+  text-decoration: none;
+  color: white;
+}
+.explore-button-div {
+  display: flex;
+  justify-content: center;
+}
+.about-blog {
+  word-wrap: break-word;
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+.page-2-bg {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
+.page-2-bg-img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  background-attachment: fixed;
+}
+
+.word-with-lines::before,
+.word-with-lines::after {
+  content: "";
+  display: inline-block;
+  width: 30%; /* Adjust the width as needed */
+  height: 1px; /* Adjust the height as needed */
+  background-color: grey; /* Adjust the line color */
+  vertical-align: middle;
+}
+
+.word-with-lines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 40px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.bd-example {
+  width: 80%;
+  height: 100%;
+}
+.slider {
+  display: flex;
+  justify-content: center;
+}
+.page-2 {
+  height: 100%;
+  margin-bottom: 50px;
+}
+.sliderimg {
+  filter: grayscale(30%);
+  height: 100%;
+}
+.page-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../SpaceBlog/resources/earth-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.carousel-inner {
+  height: 100%;
+}
+.page-3-content {
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.5);
+  padding: 20px;
+}
+.page-3-content-header {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 40px;
+
+  padding: 20px 0 50px 0;
+  display: flex;
+  justify-content: center;
+}
+.page-3-content-img {
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  background-color: black;
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+.footer-text {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  color: white;
+}
+.name-img {
+  box-shadow: 30px 30px 2px 0px rgb(0, 0, 0);
+  margin-bottom: 40px;
+}
+
+.about-name-header {
+  font-family: "Trebuchet MS", sans-serif;
+  color: white;
+}
+.logos {
+  display: flex;
+  justify-content: center;
+}
+.about-name-text {
+  width: 100%;
+}
+.name-img {
+  width: 95%;
+}
+.burger-icon {
+  padding: 35px;
+  font-size: 25px;
+  color: white;
+}
+.header-res-div {
+  width: 80%;
+}
+@media all and (min-width: 1022px) and (max-width: 2000px) {
+  .page-3-content-facts {
+    display: flex;
+  }
+  .name-img {
+    width: 500px;
+  }
+  .about-name {
+    margin-left: 60px;
+  }
+  .bd-example {
+    width: 45%;
+    height: 100%;
+  }
+  .nav-contents-list {
+    list-style-type: none;
+    display: flex;
+  }
+  .burger-icon {
+    display: none;
+  }
+  .header-res-div {
+    width: 50%;
+  }
+  .nav-div {
+    width: 70%;
+  }
+}
+@media all and (min-width: 700px) and (max-width: 1021px) {
+  .header-res-div {
+    width: 70%;
+  }
+}
+@media all and (min-width: 300px) and (max-width: 699px) {
+  .header-content-style {
+    font-size: 35px;
+  }
+  .page-3-content-header {
+    font-size: 30px;
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.nav-links:hover {
+  color: white;
+}
