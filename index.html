@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spaceblog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="./resources/titleimg.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../SpaceBlog/style.css" />
+  </head>
+  <body onload="typeWriter()">
+    <nav class="nav">
+      <div class="nav-div">
+        <div class="logo">Spaceblog</div>
+        <div class="nav-contents">
+          <ul class="nav-contents-list">
+            <a href="#" class="nav-links"
+              ><li class="nav-content-list-1">Home</li></a
+            >
+            <a href="#" class="nav-links"
+              ><li class="nav-content-list-1">Explore</li></a
+            >
+            <a href="#" class="nav-links"
+              ><li class="nav-content-list-1">Contact</li></a
+            >
+          </ul>
+          <div class="burger">
+            <i class="fa fa-bars burger-icon" onclick="openNav()"></i>
+          </div>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <a href="#">Home</a>
+            <a href="#">Explore</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="video">
+      <video autoplay muted loop id="myVideo">
+        <source src="../SpaceBlog/resources/space.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+
+    <section class="header">
+      <div class="header-content">
+        <div class="header-res-div">
+          <p class="header-content-style">Discover The Universe</p>
+          <p class="about-blog" id="about-blog">
+            <!-- Welcome to our space blog, where we dive into mysteries and
+            discoveries of the cosmos... -->
+          </p>
+          <div class="explore-button-div">
+            <a href="#" class="explore-button">Explore</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page-2">
+      <div>
+        <span class="word-with-lines">&nbsp;Cosmos&nbsp;</span>
+      </div>
+      <div class="slider">
+        <div class="bd-example">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleCaptions"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../SpaceBlog/resources/blackhole.jpg"
+                  class="d-block w-100 sliderimg"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Supermassive Blackholes</h5>
+                  <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../SpaceBlog/resources/whitedwarf.jpg"
+                  class="d-block w-100 sliderimg"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>White Dwarfs</h5>
+                  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../SpaceBlog/resources/wormhole.jpg"
+                  class="d-block w-100 sliderimg"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Wormholes</h5>
+                  <!-- <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                 </p> -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../SpaceBlog/resources/nebula.jpg"
+                  class="d-block w-100 sliderimg"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Nebulas</h5>
+                  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../SpaceBlog/resources/andromeda.jpg"
+                  class="d-block w-100 sliderimg"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Andromeda</h5>
+                  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleCaptions"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleCaptions"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="page-2-bg">
+      <img src="earth-bg.jpg" alt="" class="page-2-bg-img" />
+    </div> -->
+    <span class="page-3-content-header">Go Beyond Imagination!</span>
+
+    <section class="page-3">
+      <div class="page-3-content">
+        <div class="page-3-content-facts">
+          <div class="page-3-content-name">
+            <img
+              src="../SpaceBlog/resources/eventhorizon.jpg"
+              alt=""
+              class="name-img"
+            />
+          </div>
+          <div class="about-name">
+            <h3 class="about-name-header">Event Horizon Telescope</h3>
+            <p style="color: white" class="about-name-text">
+              The first photo of a black hole was captured by the Event Horizon
+              Telescope (EHT) project, an international collaboration of
+              scientists. The image, which was unveiled on April 10, 2019, was
+              of the supermassive black hole located at the center of the
+              Messier 87 (M87) galaxy.Although the photo was a collective
+              effort, it is important to note that no single person took the
+              photo. Instead, the image was produced by combining data collected
+              from a network of radio telescopes around the world using a
+              technique called very-long-baseline interferometry (VLBI)
+            </p>
+          </div>
+        </div>
+        <div class="page-3-content-facts">
+          <div class="page-3-content-name">
+            <img
+              src="../SpaceBlog/resources/hubblespace.jpeg"
+              alt=""
+              class="name-img"
+            />
+          </div>
+          <div class="about-name">
+            <h3 class="about-name-header">Hubblespace Telescope</h3>
+            <p style="color: white" class="about-name-text">
+              The Hubble Space Telescope has made numerous groundbreaking
+              scientific discoveries across various fields of astronomy. It has
+              provided crucial insights into the age of the universe, the
+              expansion rate of the universe (Hubble's Law), the existence of
+              dark matter and dark energy, the formation of galaxies, the
+              lifecycle of stars, and the identification of exoplanets, among
+              others. Hubble is renowned for capturing breathtaking images of
+              celestial objects. Its high-resolution images have provided
+              stunning views of distant galaxies, nebulae, star clusters, and
+              supernovae. These images have not only expanded our knowledge of
+              the cosmos but have also sparked public interest and appreciation
+              for the beauty of the universe.
+            </p>
+          </div>
+        </div>
+        <div class="page-3-content-facts">
+          <div class="page-3-content-name">
+            <img
+              src="../SpaceBlog/resources/spacestation.jpg"
+              alt=""
+              class="name-img"
+            />
+          </div>
+          <div class="about-name">
+            <h3 class="about-name-header">International Space Station</h3>
+            <p style="color: white" class="about-name-text">
+              The ISS is a joint project involving the space agencies of
+              multiple nations. The major partners include NASA (United States),
+              Roscosmos (Russia), JAXA (Japan), ESA (European Space Agency), and
+              CSA (Canadian Space Agency). These agencies work together to
+              build, maintain, and operate the space station. The ISS serves as
+              a home and workplace for astronauts and cosmonauts from different
+              countries. The crew typically consists of a mix of astronauts from
+              various partner nations. Crews usually stay on the station for
+              several months, conducting scientific experiments, performing
+              maintenance, and supporting ongoing research.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="logos">
+        <a href="#" style="padding: 8px">
+          <img
+            src="../SpaceBlog/resources/facebook.png"
+            alt=""
+            width="25px"
+            height="25px"
+          />
+        </a>
+        <a href="#" style="padding: 8px">
+          <img
+            src="../SpaceBlog/resources/instagram.png"
+            alt=""
+            width="25px"
+            height="25px"
+          />
+        </a>
+        <a href="#" style="padding: 8px">
+          <img
+            src="../SpaceBlog/resources/linkedin.png"
+            alt=""
+            width="25px"
+            height="25px"
+          />
+        </a>
+        <a href="#" style="padding: 8px">
+          <img
+            src="../SpaceBlog/resources/github.png"
+            alt=""
+            width="25px"
+            height="25px"
+          />
+        </a>
+      </div>
+      <span class="footer-text">All rights reserved | Made by @SaifM</span>
+    </footer>
+    <!-- <div>
+      <h1>HIIIII</h1>
+    </div> -->
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./script.js"></script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+</html>
