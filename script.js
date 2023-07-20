@@ -1,3 +1,11 @@
+window.addEventListener('load', function () {
+  // Website has finished loading, hide the loading overlay
+  var loadingOverlay = document.getElementById('loading');
+  var web = document.getElementById('web').style.display='';
+  loadingOverlay.style.display = 'none';
+  console.log('hiihi')
+});
+
 window.addEventListener("scroll", function () {
   var navbar = document.querySelector(".nav");
   var scrollPosition = window.scrollY;
