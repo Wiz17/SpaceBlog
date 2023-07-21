@@ -4,11 +4,15 @@
   text-decoration: none;
 }
 .loading-div{
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  overflow: hidden;
 }
 #myVideo {
   height: 100vh;
